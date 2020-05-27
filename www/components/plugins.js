@@ -1,3 +1,4 @@
+
 $(document).on("click","#alerta",function(){
    navigator.notification.alert("Minha Mensagem",null,"Aviso!!","Aceito");
 });
@@ -11,7 +12,7 @@ $(document).on("click","#confirm",function(){
     }
 
   }
-  navigator.notification.confirm("Escolha A ou B",confirma,"Escolha:",["A,B"]);
+  navigator.notification.confirm("Escolha A ou B",confirma,"Escolha:",["A","B"]);
 });
 $(document).on("click","#beep",function(){
    navigator.notification.beep(3);
@@ -30,6 +31,7 @@ $(document).on("click","#vibrar",function(){
           zoom: 12
           
         });
+  }
 
   
 $(document).on("click","#local",function(){
@@ -42,4 +44,3 @@ $(document).on("click","#local",function(){
     }
     navigator.geolocation.getCurrentPosition(onSuccess, onError);
 });
-  }
